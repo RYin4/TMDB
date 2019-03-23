@@ -1,0 +1,11 @@
+{
+  "name": "tmdb-module",
+  "version": "1.0.0",
+  "description": "Module for The Movie Database API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Randy Yin",
+  "license": "MIT"
+}
