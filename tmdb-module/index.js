@@ -1,47 +1,20 @@
 const config = require('./config');
 const superagent = require('superagent');
 
-//helper function, underscore to make it "private"
-const _fetch = command => {
-    return superagent.get(`${config.url}/${command}`)
-                //may be in repsonse.text
-                .then(response => response.body)
-                //error maybe located somewhere else depending on the API. Check your api 
-                .catch(error => error.response.body)
+//to fetch a list of tv shows based on keyword
+// https://api.themoviedb.org/3/search/tv?api_key=c261880f23d34ae50288c921b209df51&query=<keyword>
+
+//to fetch more details about a tv show
+// https://api.themoviedb.org/3/search/tv/<tv-id>?api_key=c261880f23d34ae50288c921b209df51
+
+const _buildQueryArgs = (options) => {
+
 }
 
-//export
-// const deck = shuffle => {
-//     if (shuffle) {
-//         //get the shuffle cards
-//         //it is hardcoded, yours should not be hardcoded
-//         return _fetch('deck/new/shuffle?deck_count=1')
-        
-//     } else {
-//         //fetch the unshuffled deck 
-//         return _fetch('deck/new?deck_count=1')
-//     }
-// }
+exports.search = (term, options) => {
 
-// const draw = (deckID, count) => {
-//     //draw cards 
-//     return _fetch(`deck/${deckId}/draw/?count=${count}`)
-// }
-
-
-const search = search => {
-    if (search) {
-        return _fetch();
-    } else {
-        return _fetch();
-    }
-}
-const fetch = () => {
-    return _fetch();
 }
 
-//export these functions so they can be used throughout the application 
-module.exports = {
-    search, 
-    fetch
+exports.library = (name, options) => {
+
 }

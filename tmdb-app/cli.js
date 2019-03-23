@@ -1,27 +1,18 @@
+//ClI using yargs for search command
+//ex: node cli.js search -k keyword
+
 const
     app = require('./app'),
     yargs = require('yargs')
 
+//node cli.js search --help
 
 const flags = yargs.usage('$0: Usage <cmd> [options]')
     .command({
-        command: 'draw',
-        desc: 'draws a card from the deck',
-        builder: (yargs) => {
-            return yargs.option('s', {
-                alias: 'shuffle',
-                describe: 'shuffle the deck before drawing'
-            }).option('n', {
-                alias: 'number',
-                describe: 'number of cards to draw'
-            })
-        },
-        handler: (argv) => { app.draw(argv.shuffle, argv.number) }
+        command: 'search',
+        desc: 'search for a tv show',
+        handler: () => app.search()
     })
-    // .command({
-    //     command: 'play',
-    //     desc: 'play a 5 card draw game',
-    //     handler: () => app.play()
-    // })
     .help('help')
     .argv
+        
