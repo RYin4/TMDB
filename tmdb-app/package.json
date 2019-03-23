@@ -1,0 +1,16 @@
+{
+    "name": "tmdb-app",
+    "version": "1.0.0",
+    "description": "app for interacting with The Movie Database API",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Randy Yin",
+    "license": "MIT",
+    "dependencies": {
+      "tmdb-module": "file:../tmdb-module",
+      "inquirer": "^5.1.0",
+      "yargs": "^11.0.0"
+    }
+  } 

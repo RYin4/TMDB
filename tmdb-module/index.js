@@ -28,6 +28,7 @@ const _fetch = command => {
 //     return _fetch(`deck/${deckId}/draw/?count=${count}`)
 // }
 
+
 const search = search => {
     if (search) {
         return _fetch();
@@ -39,3 +40,8 @@ const fetch = () => {
     return _fetch();
 }
 
+//export these functions so they can be used throughout the application 
+module.exports = {
+    search, 
+    fetch
+}
