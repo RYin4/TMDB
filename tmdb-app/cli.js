@@ -1,19 +1,20 @@
-const
-    app = require('./app'),
-    yargs = require('yargs')
+const 
+    yargs = require('yargs'),
+    app = require('./app')
 
 const flags = yargs.usage('$0: Usage <cmd> [options]')
     .command({
         command: 'search',
-        desc: '--sq <query> search for a tv show',
+        desc: 'search for your tv show',
         builder: (yargs) => {
-            return yargs.options('softQuery', {
-                alias: 'sq',
-                describe: 'find your tv show using query'
+            return yargs.options('q', {
+                alias: 'query',
+                describe: 'find your tv show using a query'
             })
         },
-        handler: (argv) => {app.searchWithParams(argv.sq)}
+        handler: (argv) => {
+            app.search(argv.query)
+        }
     })
     .help('help')
     .argv
-        
