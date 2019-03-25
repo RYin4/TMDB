@@ -1,4 +1,4 @@
-# TheMovieDBApp
+# The Movie Database Application 
 
 ### Purpose 
 To provide users the ability to search and fetch data about a tv show using the command line interface and The Movie Database API
