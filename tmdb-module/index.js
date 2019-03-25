@@ -1,20 +1,17 @@
-const config = require('./config');
-const superagent = require('superagent');
+const
+    config = require('./config'),
+    superagent = require('superagent')
 
-//to fetch a list of tv shows based on keyword
-// https://api.themoviedb.org/3/search/tv?api_key=c261880f23d34ae50288c921b209df51&query=<keyword>
-
-//to fetch more details about a tv show
-// https://api.themoviedb.org/3/search/tv/<tv-id>?api_key=c261880f23d34ae50288c921b209df51
-
-const _buildQueryArgs = (options) => {
-
+const _fetch = (command) => {
+    return superagent.get(`${config.url}/${command}`)
+        .then(response => response.body)
+        .catch(error => error.response.body)
 }
 
-exports.search = (term, options) => {
-
+exports.search = (sq) => {
+    return _fetch(`search/tv?api_key=c261880f23d34ae50288c921b209df51&query=${sq}`)
 }
 
-exports.library = (name, options) => {
-
+exports.information = (id) => {
+    return _fetch(`tv/${id}?api_key=c261880f23d34ae50288c921b209df51`)
 }
