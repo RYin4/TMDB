@@ -10,8 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "inquirer": "^5.2.0",
-    "superagent": "^4.1.0",
     "tmdb-module": "file:../tmdb-module",
-    "yargs": "^11.0.0"
+    "yargs": "^13.2.2"
   }
 }

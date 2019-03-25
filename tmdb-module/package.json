@@ -9,7 +9,6 @@
   "author": "Randy Yin",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^6.2.2",
     "superagent": "^4.1.0"
   }
 }
