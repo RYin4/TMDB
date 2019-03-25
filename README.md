@@ -14,7 +14,5 @@ To provide users the ability to search and fetch data about a tv show using the 
 The user can search for a TV show through the command line interface. Search returns a list of tv shows that contains the users search within their show title. The user can select a specfic tv show to view more information about it. 
 
 ### Screen Shots 
-  ![BookInventorySystem!](https://github.com/RYin4/BookInventorySystem/blob/master/BIS.png "BookInventorySystem")
-    ![BookInventorySystem!](https://github.com/RYin4/BookInventorySystem/blob/master/BIS2.png "BookInventorySystem")
-    ![BookInventorySystem!](https://github.com/RYin4/BookInventorySystem/blob/master/BIS3.png "BookInventorySystem")
-    ![BookInventorySystem!](https://github.com/RYin4/BookInventorySystem/blob/master/BIS4.png "BookInventorySystem")
+  ![TheMovieDBApp!](https://github.com/RYin4/TheMovieDBApp/blob/master/ScreenShot1.png "TheMovieDBApp")
+    ![TheMovieDBApp!](https://github.com/RYin4/TheMovieDBApp/blob/master/ScreenShot2.png "TheMovieDBApp")
